@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+       
+<tiles-definitions>
+ <!-- ADMIN TEMPLATE -->
+  <definition name="admin.template" template="/WEB-INF/templates/admin/template.jsp">
+    <put-attribute name="header" value="/WEB-INF/templates/admin/header.jsp" />
+     <put-attribute name="left-bar" value="/WEB-INF/templates/admin/left-bar.jsp" />
+    <put-attribute name="body" value="" />
+    <put-attribute name="footer" value="/WEB-INF/templates/admin/footer.jsp" />
+  </definition>
+  
+  <definition name="admin.index.index" extends="admin.template">
+    <put-attribute name="body" value="/WEB-INF/jsp/admin/index/index.jsp" />
+  </definition>
+  <definition name="admin.member.index" extends="admin.template">
+    <put-attribute name="body" value="/WEB-INF/jsp/admin/member/index.jsp" />
+  </definition>
+  <definition name="admin.member.add" extends="admin.template">
+    <put-attribute name="body" value="/WEB-INF/jsp/admin/member/add.jsp" />
+  </definition>
+  <definition name="admin.member.edit" extends="admin.template">
+    <put-attribute name="body" value="/WEB-INF/jsp/admin/member/edit.jsp" />
+  </definition>
+  <definition name="admin.question.index" extends="admin.template">
+    <put-attribute name="body" value="/WEB-INF/jsp/admin/question/index.jsp" />
+  </definition>
+  <definition name="admin.question.listenadd" extends="admin.template">
+    <put-attribute name="body" value="/WEB-INF/jsp/admin/question/listening_add.jsp" />
+  </definition>
+  <definition name="admin.question.readadd" extends="admin.template">
+    <put-attribute name="body" value="/WEB-INF/jsp/admin/question/reading_add.jsp" />
+  </definition>
+  <definition name="admin.question.listenedit" extends="admin.template">
+    <put-attribute name="body" value="/WEB-INF/jsp/admin/question/listening_edit.jsp" />
+  </definition>
+  <definition name="admin.question.readedit" extends="admin.template">
+    <put-attribute name="body" value="/WEB-INF/jsp/admin/question/reading_edit.jsp" />
+  </definition>
+    <definition name="admin.categoryVacaburaly.index" extends="admin.template">
+    <put-attribute name="body" value="/WEB-INF/jsp/admin/vocaburaly/index.jsp" />
+  </definition>
+   <!--END ADMIN TEMPLATE -->
+    <!-- ///////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+  
+  <!-- NEW PUBLIC TEMPLATE -->
+  <definition name="public.template" template="/WEB-INF/templates/public/template.jsp">
+    <put-attribute name="header" value="/WEB-INF/templates/public/header.jsp" />
+     <put-attribute name="leftbar" value="/WEB-INF/templates/public/leftbar.jsp" />
+    <put-attribute name="body" value="" />
+    <put-attribute name="rightbar" value="/WEB-INF/templates/public/rightbar.jsp" />
+    <put-attribute name="footer" value="/WEB-INF/templates/public/footer.jsp" />
+  </definition>
+  
+  <definition name="public.index.index" extends="public.template">
+    <put-attribute name="body" value="/WEB-INF/jsp/public/index.jsp" />
+  </definition>
+  <!-- END NEW PUBLIC TEMPLATE -->
+</tiles-definitions>
